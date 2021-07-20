@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(214, 211, 209);
+}
+
+img {
+  width: 180px;
+  border-radius: 90px;
+  margin: 0px 0px -10px 10px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(189, 45, 45);
+  background-color: rgb(36, 39, 41);
+  float: left;
+}
+.header {
+  background-color: rgb(49, 71, 83);
+  background-image: url("../images/HTML0.jpg");
+}
