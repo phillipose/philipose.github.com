@@ -20,3 +20,25 @@ img {
   background-color: rgb(49, 71, 83);
   background-image: url("../images/HTML0.jpg");
 }
+h1 {
+  font-size: 5vw;
+  font-weight: bold;
+  color: rgb(38, 132, 219);
+}
+h2 {
+  font-family: sans-serif;
+  color: rgb(38, 132, 219);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.has-dropcap:first-letter {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 4rem;
+  line-height: 0.6;
+  margin: 0.1em 0.1em 0.2em 0;
+}
