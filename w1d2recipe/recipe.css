@@ -51,5 +51,5 @@ ul {
   list-style: none;
 }
 ul li:before {
-  margin-right: ;
+  margin: right 0;
 }
