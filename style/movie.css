@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/background.png);
+  background-image: url(../images/moviesreview/background.png);
   font-family: sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  background-image: url(../img/bannerbg.png);
+  background-image: url(../images/moviesreview/bannerbg.png);
 }
 
 .banner img {
@@ -72,7 +72,7 @@ aside dl ul {
 }
 
 .container > section .header {
-  background-image: url(../img/rbg.png);
+  background-image: url(../images/moviesreview/rbg.png);
   border-top-left-radius: 28px;
   height: 85px;
   color: red;
