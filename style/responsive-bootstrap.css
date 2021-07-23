@@ -1,0 +1,33 @@
+header {
+  background: #6cbbe9;
+  text-align: center;
+}
+
+.nav {
+  background: #364955;
+}
+
+.nav .menu-item {
+  text-align: center;
+  border-right: 1px solid #000;
+}
+
+.content div {
+  height: 200px;
+  background: rgb(129, 121, 121);
+}
+
+.content .col-item-2 {
+  background: #aaa2a2;
+}
+
+.content .col-item-3 {
+  background: #c7c2c2;
+  flex: 1;
+}
+
+footer {
+  background: #3f464b;
+  color: #fff;
+  text-align: center;
+}
