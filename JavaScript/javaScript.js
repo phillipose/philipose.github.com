@@ -59,7 +59,8 @@
   console.log(a.reduce((p, n) => p * n, 1));
 
 
-  /* Test cases */
+    /* Test cases */
+    console.log("Expected output of max(20,10) is 10 and  " + myFunctionTest(10, function () { return max(20, 10); } ));
   myFunctionTest(20, max(20, 10));
 
   myFunctionTest(44, maxOfThree(5, 4, 44));

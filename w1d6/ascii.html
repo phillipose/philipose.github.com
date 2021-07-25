@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIImation</title>
+    <link rel="stylesheet" href="./ascii.css">
+    <script src="./animation.js"></script>
+    <script src="./ascii.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CS472:ASCII Animation Viewer</h1>
+        </header>
+        <textarea id="input"></textarea>
+        <div class="btns">
+            <fieldset>
+                <legend>Play Controls:</legend>
+                <button id="btn-start" onclick="onAnimationStart()">Start</button>
+                <button id="btn-stop" onclick="onAnimationStop()">Stop</button>
+            </fieldset>
+            <fieldset>
+                <legend>Animation:</legend>
+                <select name="animation-select" id="animation-select" onchange="onAnimationClick()"></select>
+            </fieldset>
+            <fieldset>
+                <legend>Size:</legend>
+                <select name="size-select" id="size-select" onchange="onFontClick()">
+                    <option value="7pt">Tiny</option>
+                    <option value="10pt">Small</option>
+                    <option value="12pt" selected>Medium</option>
+                    <option value="16pt">Large</option>
+                    <option value="24pt">Extra Large</option>
+                    <option value="32pt">XXL</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed: </legend>
+                <input type="checkbox" id="turbo" name="turbo" onchange="onTurboChecked()">
+                <label for="turbo">Turbo</label>
+            </fieldset>
+        </div>
+    </div>
+    <div class="validator">
+        <a href="https://validator.w3.org/check/referer">
+            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/>
+        </a>
+    </div>
+    <div class="validator">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </div>
+    <div class="validator">
+        <a href="http://jslint.com">
+            <img style="border:0;width:88px;height:31px"
+                src="http://mumstudents.org/jshint/jshint-small.png"
+                alt="Valid JS!" />
+        </a>
+    </div>
+</body>
+</html>
