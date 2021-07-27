@@ -1,5 +1,6 @@
 body {
   background-color: rgb(214, 211, 209);
+  margin: 5px 50px 5px 10px;
 }
 
 img {
@@ -19,6 +20,7 @@ img {
 .header {
   background-color: rgb(49, 71, 83);
   background-image: url("../images/HTML0.jpg");
+  border: 2px crimson;
 }
 h1 {
   font-size: 5vw;
@@ -41,4 +43,12 @@ a:hover {
   font-size: 4rem;
   line-height: 0.6;
   margin: 0.1em 0.1em 0.2em 0;
+}
+ul {
+  text-overflow: hidden;
+  overflow-y: scroll;
+  height: 200px;
+  padding: 20px;
+  margin: 5px;
+  text-align: left;
 }

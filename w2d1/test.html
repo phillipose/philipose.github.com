@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functional programming and Test using mocha</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        mocha.setup('bdd');
+        let assert = chai.assert;
+    </script>
+    <script src="./problem.js"></script>
+
+    <script>
+/* 4 Define a function sum() and a function multiply() 
+   that sums and multiplies (respectively) all the numbers 
+   in an array of numbers*/
+        describe("sum", () => {
+            it("should return sum of numbers in the array",
+                () => {
+                    assert.equal(20, sum([9, 1, 8, 2]));
+                    assert.equal(10, sum([1, 2, 3, 4]));
+                    assert.equal(100, sum([10, 20, 30, 40]));
+                });
+        });
+
+        describe("multiply", () => {
+            it("return product ",
+                () => {
+                    assert.equal(24, multiply([1, 2, 3, 4]));
+                });
+        });
+/* 5 Define a function reverse() that computes the reversal of a string.*/
+        describe("reverse", () => {
+            it("reverse a string",
+                () => {
+                    assert.equal("esopilihp", reverse("philipose"));
+                    assert.equal("yasis", reverse("sisay"));
+                });
+        });
+/* 7 Write a function filterLongWords() that takes an array of words and 
+   an integer i and returns the array of words that are longer than i. */
+
+        describe("filterLongWords", () => {
+            it(" the array of words that are longer than ",
+                () => {
+                    assert.deepEqual(['phillipose', "tadesse"], filterLongWords(['phillipose', "sisay", "tadesse"], 6));
+                });
+        });
+
+    </script>
+</head>
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+    </script>
+</body>
+</html>
