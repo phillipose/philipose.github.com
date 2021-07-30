@@ -1,7 +1,7 @@
 describe("filter", () => {
   it("should remove banned words from a string",
       () => {
-          assert.equal("This house is not nice!".filter('not'), "This house is nice!");
+        assert.equal("I don't like to study not here".filter("don't", "not"), "I  like to study  here");
       });
 });
 
