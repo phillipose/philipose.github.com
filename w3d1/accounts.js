@@ -5,7 +5,7 @@
  * 
  * Provides the basic functionality that every account should have
  */
-class Account {
+ class Account {
     /**
      * Constructor for creating a new Account object
      * 
@@ -15,7 +15,7 @@ class Account {
         this._number = number; // the account number
         this._balance = 0.0;
     }
-      
+
     /**
      * Getter for the 'private' number field
      * 
@@ -43,7 +43,7 @@ class Account {
      */
     deposit(amount) {
         if (amount <= 0) {
-          throw new RangeError("Deposit amount has to be greater than zero");
+            throw new RangeError("Deposit amount has to be greater than zero");
         }
         this._balance += amount;
     }
@@ -73,6 +73,10 @@ class Account {
         return "Account " + this._number + ": balance " + this._balance;
     }
 
+    setBalance(amount) {
+        this._balance = amount;
+    }
+
     /**
      * Performs needed actions at the end of the month
      * 
@@ -80,11 +84,5 @@ class Account {
      */
     endOfMonth() {
         return ""; // does nothing
-    }
-    SavingAccount() {
-        
-    }
-    CheckingAccount() {
-        
     }
 }
