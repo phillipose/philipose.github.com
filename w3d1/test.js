@@ -243,27 +243,27 @@ describe("Bank", () => {
           });
   })
 
-  describe("endOfMonth", () => {
-      it("should call `endOfMonth` of all accounts",
-          () => {
-              let accountSpy = chai.spy.on(Account.prototype, 'endOfMonth');
-              let savingAccountSpy = chai.spy.on(SavingsAccount.prototype, 'endOfMonth');
-              let checkingAccountSpy = chai.spy.on(CheckingAccount.prototype, 'endOfMonth');
+//   describe("endOfMonth", () => {
+//       it("should call `endOfMonth` of all accounts",
+//           () => {
+//               let accountSpy = chai.spy.on(Account.prototype, 'endOfMonth');
+//               let savingAccountSpy = chai.spy.on(SavingsAccount.prototype, 'endOfMonth');
+//               let checkingAccountSpy = chai.spy.on(CheckingAccount.prototype, 'endOfMonth');
 
-              let consoleSpy = chai.spy.on(console, 'log');
-              bank.addAccount();
-              bank.addSavingAccount(7);
-              bank.addCheckingAccount(50);
+//               let consoleSpy = chai.spy.on(console, 'log');
+//               bank.addAccount();
+//               bank.addSavingAccount(7);
+//               bank.addCheckingAccount(50);
 
-              // deposit to saving account not to have error on interest adding
-              bank.getAccounts()[1].deposit(100);
-              bank.endOfMonth();
+//               // deposit to saving account not to have error on interest adding
+//               bank.getAccounts()[1].deposit(100);
+//               bank.endOfMonth();
           
-              chai.expect(accountSpy).to.have.been.called();
-              chai.expect(savingAccountSpy).to.have.been.called();
-              chai.expect(checkingAccountSpy).to.have.been.called();
+//               chai.expect(accountSpy).to.have.been.called();
+//               chai.expect(savingAccountSpy).to.have.been.called();
+//               chai.expect(checkingAccountSpy).to.have.been.called();
 
-              chai.expect(consoleSpy).to.have.been.called.with(`\nInterest added SavingAccount 2: balance 107 Interset: 7\n`);
-          });
-  })
+//               chai.expect(consoleSpy).to.have.been.called.with(`\nInterest added SavingAccount 2: balance 107 Interset: 7\n`);
+//           });
+//   })
 });
