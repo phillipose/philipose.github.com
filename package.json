@@ -1,0 +1,19 @@
+{
+  "name": "philipose.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipose/philipose.github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipose/philipose.github/issues"
+  },
+  "homepage": "https://github.com/phillipose/philipose.github#readme"
+}
