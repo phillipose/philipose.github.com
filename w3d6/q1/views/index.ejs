@@ -1,0 +1,15 @@
+<!DOCTYPEhtml>
+<htmllang='en'>
+    <head>
+        <metacharset="utf-8">
+        <title>Current time</title>
+        <%if (data.isDay) { %>
+            <link rel="stylesheet" href="css/day.css">
+        <% } else { %>
+            <link rel="stylesheet" href="css/night.css">
+        <% } %>
+    </head>
+    <body>
+        This page was loaded at <%= data.time %>
+    </body>
+</html>
