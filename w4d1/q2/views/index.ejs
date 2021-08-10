@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%if (data.isDay) { %>
+        <link rel="stylesheet" href="css/day.css">
+    <% } else { %>
+        <link rel="stylesheet" href="css/night.css">
+    <% } %>
+    <title>Document</title>
+</head>
+<body>
+    <%= data.css %>
+    <form action="result" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+        <button type="submit">Submit Query</button>
+    </form>
+</body>
+</html>

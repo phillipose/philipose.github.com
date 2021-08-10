@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            border-color: black;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <%- include('./partials/header'); %>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>quantity</th>
+            <th>Total Price</th>
+        </tr>
+        <% for(var id of Object.keys(data.cart)) {%>
+            <tr>
+                <td><%=data.cart[id].name%></td>
+                <td><%=data.cart[id].quantity%></td>
+                <td><%=data.cart[id].quantity * parseInt(data.cart[id].price)%></td>
+            </tr>
+        <% } %>
+    </table>
+    <%- include('./partials/footer'); %>
+</body>
+</html>
