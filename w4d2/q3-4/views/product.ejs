@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</head>
+<body>
+    <%- include('./partials/header'); %>
+    <div>
+        <p>
+            ID: <%= data.product.id %>, Name: <%= data.product.name %>, Description: <%= data.product.description %>, Price: <%= data.product.price %>
+        </p>
+        <form id="form">
+            <input type="hidden" name="id" value=<%= data.product.id%>>
+            <input type="hidden" name="name" value=<%= data.product.name%>>
+            <input type="hidden" name="price" value=<%= data.product.price%>>
+            <button id="add-btn">Add to Cart</button>
+        </form>
+        <a href="/shoppingCart">view cart - <span id="count"><%= data.quantity %><span></a>
+    </div>
+    <%- include('./partials/footer'); %>
+</body>
+</html>
